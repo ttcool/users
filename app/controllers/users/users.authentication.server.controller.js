@@ -23,7 +23,7 @@ exports.captcha_x = function(req,res){
 
     var ary = captcha.get();
 
-    fs.rename('/Users/chentao/Downloads/meanjs/public/cap_img/captcha_.bmp', '/Users/chentao/Downloads/meanjs/public/cap_img/'+ ary[0] + '.bmp', function (err) {
+    fs.rename('/Downloads/meanjs/public/cap_img/captcha_.bmp', '/Downloads/meanjs/public/cap_img/'+ ary[0] + '.bmp', function (err) {
         if (err) throw err;
         console.log('renamed complete');
     });
